@@ -16,8 +16,8 @@ function LandingSection() {
 
   useEffect(() => {
     canvas = canvasRef.current
-    console.log(window.innerWidth)
-    console.log(window.innerHeight)
+    // console.log(window.innerWidth)
+    // console.log(window.innerHeight)
 
     canvas.width = window?.innerWidth;
     canvas.height = window?.innerHeight;

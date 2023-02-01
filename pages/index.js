@@ -4,9 +4,36 @@ import LandingSection from '../components/LandingSection'
 import PortfolioSection from '../components/PortfolioSection'
 import SkillsSection from '../components/SkillsSection'
 import ContactSection from '../components/ContactSection'
+import { useRecoilState } from 'recoil'
+import { contactState, portfolioState, skillsState } from '@/recoil/atoms'
+import { useEffect, useState } from 'react'
 
 
 export default function Home() {
+
+  const [portfolio] = useRecoilState(portfolioState);
+  const [skills] = useRecoilState(skillsState);
+  const [contact] = useRecoilState(contactState);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+
+  }, [scrollPosition])
+
+
   return (
     <>
       <Head>
@@ -26,7 +53,6 @@ export default function Home() {
         <PortfolioSection />
 
         <SkillsSection />
-
 
         <ContactSection />
 
