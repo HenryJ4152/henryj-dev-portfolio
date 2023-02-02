@@ -49,14 +49,11 @@ export default function Home() {
 
         <LandingSection />
 
-
         <PortfolioSection />
 
         <SkillsSection />
 
         <ContactSection />
-
-
 
       </main>
 
