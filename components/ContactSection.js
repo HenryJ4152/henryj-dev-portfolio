@@ -52,6 +52,7 @@ function ContactSection() {
 
   return (
     <section ref={contactSectionRef} className='flex pt-14 pl-12  w-full h-screen text-3xl font-bold space-x-10'>
+      
       <div className=' flex flex-col'>
         <h1 className=''>Contact me</h1>
         <div className=' text-2xl font-normal mt-7'>

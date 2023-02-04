@@ -61,6 +61,14 @@ function PortfolioSection() {
         </Link>
 
 
+        <Link target="_blank" href={"https://challenge-e4db3.web.app/"} className="relative">
+          <div className=' h-[10rem] transition transform duration-300 ease-out group overflow-hidden'>
+            <img src="/amazon-clone-photo.png" alt="" className=" opacity-60 hover:opacity-100 -z-10 absolute top-0 left-0 w-full h-full object-cover transition transform duration-300 hover:scale-125" />
+            <p className=" text-3xl z-50 text-white opacity-100 group-hover:hidden p-1">Amazon Clone</p>
+          </div>
+        </Link>
+
+
       </div>
     </section>
   )
